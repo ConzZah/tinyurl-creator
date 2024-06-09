@@ -2,7 +2,7 @@
   #================================================
   # Project: TINYURL-CREATOR.sh
   # Author:  ConzZah / ©️ 2024
-  # Last Modification: 09.06.2024 / 18:24 [v1.1.1]
+  # Last Modification: 09.06.2024 / 18:27 [v1.1.1]
   #================================================
 function main {
 clear; c1="============================="
@@ -25,8 +25,8 @@ read ask2save
 case $ask2save in
 	y) echo ""; echo "$yes"; save;;
 	Y) echo ""; echo "$yes"; save;;
-	n) echo ""; echo "$no"; ask2repeat_main
-	N) echo ""; echo "$no"; ask2repeat_main
+	n) echo ""; echo "$no"; ask2repeat_main;;
+	N) echo ""; echo "$no"; ask2repeat_main;;
 	*) ask2save
 esac
 }
