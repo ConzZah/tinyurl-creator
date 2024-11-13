@@ -2,7 +2,7 @@
   #================================================
   # Project: TINYURL-CREATOR.sh
   # Author:  ConzZah / ©️ 2024
-  # Last Modification: 13.11.2024 / 13:50 [v1.2]
+  # Last Modification: 13.11.2024 / 13:55 [v1.2.1]
   #================================================
 logo () { c1="=========================="; echo -e "$c1\n   TINYURL-CREATOR v1.2 \n$c1\n";}
 # main
@@ -24,7 +24,7 @@ echo "ENTER ALIAS FOR SHORTLINK:"; echo ""; read alias; save # <-- prompt for al
 
 save () {
 # if savefile doesn't exist, create csv:
-[ ! -f "$savepath/$sav" ] && echo "ALIAS:; ORIGINAL URL:;SHORT LINK:">$sav
+[ ! -f "$savepath/$sav" ] && echo "ALIAS; ORIGINAL URL;SHORTLINK">$sav
 echo "$alias;$raw_link;$shortlink">>$sav # <-- saving user input to csv
 echo -e "\n$c1\n   LINK HAS BEEN SAVED.\n$c1"; ask2repeat_main
 }
